@@ -19,8 +19,8 @@ namespace ContosoUniversity.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Course>().ToTable("Course");
-            modelBuilder.Entity<Enrollment>().ToTable("Enrollment");
+            modelBuilder.Entity<Course>().ToTable("Course");            //I am overriding the name of the table(Instead of
+            modelBuilder.Entity<Enrollment>().ToTable("Enrollment");    //Courses, the table is called Course.
             modelBuilder.Entity<Student>().ToTable("Student");
         }
     }
